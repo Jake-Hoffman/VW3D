@@ -55,9 +55,6 @@ THREE.GLTFLoader = ( function () {
 
 			}
 
-			// Tells the LoadingManager to track an extra item, which resolves after
-			// the model is fully loaded. This means the count of items loaded will
-			// be incorrect, but ensures manager.onLoad() does not fire early.
 			scope.manager.itemStart( url );
 
 			var _onError = function ( e ) {
